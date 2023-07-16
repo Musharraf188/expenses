@@ -1,10 +1,10 @@
 import React from "react";
 import '../Expenses/ExpenseItem.css';
-const ExpenseItem = () => {
+const ExpenseItem = (props) => {
     return <div className="expense-item">
-        <div>{}</div>
-        <div className="expense-item__description"><h2>{}</h2>
-        <div className="expense-item__price">{}</div>
+        <div>{props.date}</div>
+        <div className="expense-item__description"><h2>{props.title}</h2>
+        <div className="expense-item__price">{props.amount}</div>
         </div>
     </div>
 }
